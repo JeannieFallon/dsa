@@ -8,7 +8,7 @@ The Georgia Institute of Technology (GTx)
 - To differentiate between complex tree data structures, like AVL and (2-4) trees, understand their self-balancing techniques and implementations. Visualize and examine various Divide and Conquer sorting algorithms along with their performance.
 - Analyze & implement various Pattern Matching algorithms from KMP to Rabin-Karp. Study essential graph traversal algorithms in order to implement Dijkstra’s Shortest Path, and construct Minimum Spanning Trees. Delve in Dynamic Programming.
 
-**Note**: Although the course is taught in Java, solutions here have been rewritten in [Python 3.11](https://www.python.org/downloads/release/python-3110/).
+**Note**: Although the course is taught in Java, solutions here will be rewritten in C.
 
 ## Disclaimer
 This repository is intended to showcase work completed in pursuit of a professional certificate as part of a professional portfolio. This code is not intended for redistribution, and the original author of this repository is not responsible for any academic penalties or other damages incurred from plagiarized code.
