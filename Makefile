@@ -1,4 +1,5 @@
-include 01-dsa/01-dsa.mk
+MAKEFILES=$(shell find . -name "*.mk")
+include $(MAKEFILES)
 
 BASEDIR=$(shell pwd)
 BINDIR=$(BASEDIR)/bin
@@ -7,7 +8,7 @@ CC=gcc
 
 $(shell mkdir -p ${BINDIR})
 
-export BASEDIR
+all: mod1 mod2
 
 clean:
 	rm -rf $(BINDIR)

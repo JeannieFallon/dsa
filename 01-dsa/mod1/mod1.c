@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/* ArrayList */
+/* Module 1 */
 
 int main(int argc, char **argv) {
-    printf("Hello, ArrayList\n");
+    printf("Hello, Module1\n");
     return 0;
 }
