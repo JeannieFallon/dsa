@@ -8,7 +8,7 @@ CC=gcc
 
 $(shell mkdir -p ${BINDIR})
 
-all: mod1 mod2
+all: mod1.elf mod2.elf
 
 clean:
 	rm -rf $(BINDIR)
