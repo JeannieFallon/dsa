@@ -4,11 +4,14 @@
 
 char ACTIONS[] = "0\tQuit\n1\tPrint array\n";
 
-int main(int argc, char **argv) {
-    printf("*** Module 1: ArrayList ***\n");
+int main() {
+    printf("*** Module 1: ArrayList (integers only) ***\n");
 
+    // Initialize ArrayList
+    init();
+
+    // Loop over user input to control ArrayList
     int ans = -1;
-
     do {
         printf("\nChoose an action:\n");
         printf("-----\n");
