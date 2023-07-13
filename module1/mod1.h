@@ -1,6 +1,8 @@
+/* Module 1: ArrayList */
 #ifndef MOD1_H
 #define MOD1_H
 
-int sayfoo(void);
+int print_arr(void);
+
 
 #endif /* MOD1_H */

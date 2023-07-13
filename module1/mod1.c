@@ -1,9 +1,14 @@
+/* Module 1: ArrayList */
 #include <stdio.h>
 #include "mod1.h"
 
-/* Module 1: ArrayList */
+#define INIT_CAP 9
 
-int sayfoo() {
-    printf("foo\n");
+int size;
+
+
+int print_arr() {
+    printf("init cap: %d\n", INIT_CAP);
+
     return 0;
 }

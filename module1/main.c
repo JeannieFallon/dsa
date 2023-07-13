@@ -1,7 +1,6 @@
+/* Module 1: ArrayList */
 #include <stdio.h>
 #include "mod1.h"
-
-/* Module 1: ArrayList */
 
 char ACTIONS[] = "0\tQuit\n1\tPrint array\n";
 
@@ -23,7 +22,7 @@ int main(int argc, char **argv) {
                 printf("Goodbye!\n");
                 break;
             case 1:
-                sayfoo();
+                print_arr();
                 break;
             default:
                 printf("Action not availble\n");
