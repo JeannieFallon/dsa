@@ -1,5 +1,6 @@
 /* Module 1: ArrayList */
 #include <stdio.h>
+#include <stdlib.h>
 #include "mod1.h"
 
 char ACTIONS[] = "0\tQuit\n1\tPrint array\n";
@@ -8,7 +9,8 @@ int main() {
     printf("*** Module 1: ArrayList (integers only) ***\n");
 
     // Initialize ArrayList
-    init();
+    struct array_list* arrlst = malloc(sizeof(struct array_list));
+    init(arrlst);
 
     // Loop over user input to control ArrayList
     int ans = -1;
@@ -25,7 +27,7 @@ int main() {
                 printf("Goodbye!\n");
                 break;
             case 1:
-                print_arr();
+                print_arr(arrlst);
                 break;
             default:
                 printf("Action not availble\n");

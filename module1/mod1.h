@@ -7,7 +7,7 @@ struct array_list {
     int* arr;
 };
 
-void init(void);
-int print_arr(void);
+void init(struct array_list* arrlst);
+void print_arr(struct array_list* arrlst);
 
 #endif /* MOD1_H */

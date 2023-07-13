@@ -6,19 +6,14 @@
 #define INIT_CAP 9
 
 int size;
-struct array_list* arrlst;
 
-void init() {
-    //FIXME
-    printf("DEBUG: init arrlst\n");
+void init(struct array_list* arrlst) {
     arrlst->arr = calloc(INIT_CAP, sizeof(int));
 }
 
-int print_arr() {
+void print_arr(struct array_list* arrlst) {
     printf(">>> Current array:\n");
     for (int i = 0; i < INIT_CAP; i++) {
         printf("%d ", arrlst->arr[i]);
     }
-
-    return 0;
 }
