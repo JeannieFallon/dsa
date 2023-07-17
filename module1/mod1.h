@@ -3,8 +3,9 @@
 #define MOD1_H
 
 struct array_list {
-    int size;
-    int* arr;
+    int cap;    // Capacity of backing array
+    int size;   // Length of current values
+    int* arr;   // Backing array
 };
 
 void init(struct array_list* arrlst);
