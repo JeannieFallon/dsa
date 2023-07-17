@@ -25,10 +25,22 @@ void add_to_front(struct array_list* arrlst) {
     printf(">>> Enter number to add to front of array:\n");
     scanf("%d", &num);
 
-    // Check if need to resize
-    // Possibly pull this out to shared method
+    // Resize backing array if hit capacity
+    if (arrlst->size+1 > arrlst->cap) {
+        int new_cap = arrlst->cap * 2;
+        arrlst->arr = realloc(arrlst->arr, new_cap * sizeof(int));
+    }
 
     // Iterate in reverse through backingArray, shifting vals
+    for (int i=arrlst->size; i > 0; i--) {
+        arrlst->arr[i] = arrlst->arr[i-1];
+    }
+
+    // Add new value to front
+    arrlst->arr[0] = num;
 
     // Increment size
+    arrlst->size++;
+
+    print_arr(arrlst);
 }
