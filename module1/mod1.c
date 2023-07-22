@@ -51,5 +51,17 @@ void add_to_back(struct array_list* arrlst) {
     printf("\nEnter number to add to back of array:\n");
     scanf("%d", &num);
 
-    printf("//TODO\n");
+    // Resize backing arary if hit capacity
+    if (arrlst->size+1 > arrlst->cap) {
+        int new_cap = arrlst->cap * 2;
+        arrlst->arr = realloc(arrlst->arr, new_cap * sizeof(int));
+    }
+
+    // Add new value to back
+    arrlst->arr[arrlst->size] = num;
+
+    // Increment size
+    arrlst->size++;
+
+    print_arr(arrlst);
 }
