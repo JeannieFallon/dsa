@@ -12,5 +12,7 @@ void init(struct array_list* arrlst);
 void print_arr(struct array_list* arrlst);
 void add_to_front(struct array_list* arrlst);
 void add_to_back(struct array_list* arrlst);
+void remove_from_front(struct array_list* arrlst);
+void remove_from_back(struct array_list* arrlst);
 
 #endif /* MOD1_H */

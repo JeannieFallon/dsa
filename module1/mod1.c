@@ -65,3 +65,11 @@ void add_to_back(struct array_list* arrlst) {
 
     print_arr(arrlst);
 }
+
+void remove_from_front(struct array_list* arrlst) {
+    printf("TODO: Remove from front\n");
+}
+
+void remove_from_back(struct array_list* arrlst) {
+    printf("TODO: Remove from back\n");
+}
