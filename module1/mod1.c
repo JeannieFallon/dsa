@@ -44,3 +44,12 @@ void add_to_front(struct array_list* arrlst) {
 
     print_arr(arrlst);
 }
+
+void add_to_back(struct array_list* arrlst) {
+    int num;
+
+    printf("\nEnter number to add to back of array:\n");
+    scanf("%d", &num);
+
+    printf("//TODO\n");
+}

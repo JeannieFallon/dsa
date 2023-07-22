@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "mod1.h"
 
-char ACTIONS[] = "0\tQuit\n1\tPrint array\n2\tAdd to front of array\n";
+char ACTIONS[] = "0\tQuit\n1\tPrint array\n2\tAdd to front of array\n3\tAdd to back of array\n";
 
 int main() {
     printf("*** Module 1: ArrayList (integers only) ***\n");
@@ -31,6 +31,9 @@ int main() {
                 break;
             case 2:
                 add_to_front(arrlst);
+                break;
+            case 3:
+                add_to_back(arrlst);
                 break;
             default:
                 printf("Action not availble\n");
