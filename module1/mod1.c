@@ -12,7 +12,7 @@ void init(struct array_list* arrlst) {
 }
 
 void print_arr(struct array_list* arrlst) {
-    printf(">>> Current array:");
+    printf("\n>>> Current array: ");
     for (int i = 0; i < arrlst->size; i++) {
         printf("%d ", arrlst->arr[i]);
     }
@@ -22,7 +22,7 @@ void print_arr(struct array_list* arrlst) {
 void add_to_front(struct array_list* arrlst) {
     int num;
 
-    printf(">>> Enter number to add to front of array:\n");
+    printf("\nEnter number to add to front of array:\n");
     scanf("%d", &num);
 
     // Resize backing array if hit capacity

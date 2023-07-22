@@ -24,7 +24,7 @@ int main() {
 
         switch(ans) {
             case 0:
-                printf("Goodbye!\n");
+                printf("\nGoodbye!\n");
                 break;
             case 1:
                 print_arr(arrlst);
