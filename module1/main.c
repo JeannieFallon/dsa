@@ -53,5 +53,7 @@ int main() {
 
     } while (ans != 0);
 
+    free(arrlst);
+
     return 0;
 }
