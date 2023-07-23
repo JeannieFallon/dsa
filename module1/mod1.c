@@ -67,9 +67,29 @@ void add_to_back(struct array_list* arrlst) {
 }
 
 void remove_from_front(struct array_list* arrlst) {
-    printf("TODO: Remove from front\n");
+    // TODO check that size > 0
+    int num = arrlst->arr[0];
+
+    // TODO
+    printf("\nTODO: Removing %d from front of array\n", num);
+
+    print_arr(arrlst);
 }
 
 void remove_from_back(struct array_list* arrlst) {
-    printf("TODO: Remove from back\n");
+    // TODO check that size > 0
+    int back_idx = arrlst->size - 1;
+    int num = arrlst->arr[back_idx];
+
+    printf("\nRemoving %d from back of array\n", num);
+
+    // FIXME Set value at back index to null
+    arrlst->arr[back_idx] = 0;
+    //arrlst->arr[back_idx] = NULL;
+    //memset(arrlst->arr[back_idx], NULL, sizeof(int));
+
+    // Decrement size
+    arrlst->size--;
+
+    print_arr(arrlst);
 }

@@ -6,8 +6,8 @@
 char ACTIONS[] =
     "0\tQuit\n"
     "1\tPrint array\n"
-    "2\tAdd to front of array\n"
-    "3\tAdd to back of array\n"
+    "2\tAdd to front\n"
+    "3\tAdd to back\n"
     "4\tRemove from front\n"
     "5\tRemove from back\n";
 
