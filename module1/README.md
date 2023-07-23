@@ -1,4 +1,4 @@
-# Module1: Assignment Description
+# Module1: ArrayList
 
 **Note: this description pertains to the problem set as assigned for composition in Java.**
 
