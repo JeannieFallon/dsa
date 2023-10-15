@@ -26,6 +26,37 @@ The Georgia Institute of Technology (GTx)
 | ----------- | ----------- |
 | 1           | ArrayList   |
 
+## Usage
+
+### System Requirements
+
+- Linux (written on Debian 11)
+- `make`
+- `gcc`
+
+To build all binaries, run:
+
+```
+make all
+```
+
+Run each binary to interact with data structure or algorithm covered in each module:
+
+```
+$ ./bin/mod1.elf     
+*** Module 1: ArrayList (integers only) ***   
+                                              
+Choose an action:                             
+-----                                         
+0       Quit                                  
+1       Print array                           
+2       Add to front                          
+3       Add to back                           
+4       Remove from front                     
+5       Remove from back                      
+-----                                         
+```
+
 ## Disclaimer
 This repository is intended to showcase work completed in pursuit of a professional certificate as
 part of a professional portfolio. This code is not intended for redistribution, and the original
