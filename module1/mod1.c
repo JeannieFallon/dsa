@@ -70,8 +70,20 @@ void remove_from_front(struct array_list* arrlst) {
     // TODO check that size > 0
     int num = arrlst->arr[0];
 
-    // TODO
-    printf("\nTODO: Removing %d from front of array\n", num);
+    printf("\nRemoving %d from front of array\n", num);
+
+    // Iterate through backingArray, shifting vals forward one index
+    for (int i=0; i < arrlst->size-1; i++) {
+        arrlst->arr[i] = arrlst->arr[i+1];
+    }
+
+    // FIXME Set value at back index to null
+    arrlst->arr[arrlst->size-1] = 0;
+    //arrlst->arr[back_idx] = NULL;
+    //memset(arrlst->arr[back_idx], NULL, sizeof(int));
+
+    // Decrement size
+    arrlst->size--;
 
     print_arr(arrlst);
 }
