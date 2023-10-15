@@ -67,7 +67,11 @@ void add_to_back(struct array_list* arrlst) {
 }
 
 void remove_from_front(struct array_list* arrlst) {
-    // TODO check that size > 0
+    if (arrlst-> size < 1) {
+        printf("\n!!! No items in array to remove !!!\n");
+        return;
+    }
+
     int num = arrlst->arr[0];
 
     printf("\nRemoving %d from front of array\n", num);
@@ -89,7 +93,11 @@ void remove_from_front(struct array_list* arrlst) {
 }
 
 void remove_from_back(struct array_list* arrlst) {
-    // TODO check that size > 0
+    if (arrlst-> size < 1) {
+        printf("\n!!! No items in array to remove !!!\n");
+        return;
+    }
+
     int back_idx = arrlst->size - 1;
     int num = arrlst->arr[back_idx];
 
