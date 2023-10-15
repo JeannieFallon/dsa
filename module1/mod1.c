@@ -1,6 +1,8 @@
 /* Module 1: ArrayList */
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 #include "mod1.h"
 
 #define INIT_CAP 9
@@ -81,10 +83,8 @@ void remove_from_front(struct array_list* arrlst) {
         arrlst->arr[i] = arrlst->arr[i+1];
     }
 
-    // FIXME Set value at back index to null
-    arrlst->arr[arrlst->size-1] = 0;
-    //arrlst->arr[back_idx] = NULL;
-    //memset(arrlst->arr[back_idx], NULL, sizeof(int));
+    // Set value at back index to null
+    memset(&arrlst->arr[arrlst->size-1], '\0', sizeof(int));
 
     // Decrement size
     arrlst->size--;
@@ -103,10 +103,8 @@ void remove_from_back(struct array_list* arrlst) {
 
     printf("\nRemoving %d from back of array\n", num);
 
-    // FIXME Set value at back index to null
-    arrlst->arr[back_idx] = 0;
-    //arrlst->arr[back_idx] = NULL;
-    //memset(arrlst->arr[back_idx], NULL, sizeof(int));
+    // Set value at back index to null
+    memset(&arrlst->arr[back_idx], '\0', sizeof(int));
 
     // Decrement size
     arrlst->size--;
