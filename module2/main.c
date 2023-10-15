@@ -1,5 +1,8 @@
 /* Module 2: LinkedList */
 #include <stdio.h>
+#include <stdlib.h>
+
+#include "mod2.h"
 
 char ACTIONS[] =
     "0\tQuit\n"
@@ -8,7 +11,9 @@ char ACTIONS[] =
 int main(int argc, char **argv) {
     printf("*** Module 2: LinkedList (integers only) ***\n");
 
-    // Loop over user input to control ArrayList
+    struct linked_list* llist = malloc(sizeof(struct linked_list));
+
+    // Loop over user input to control LinkedList
     int ans = -1;
     do {
         printf("\nChoose an action:\n");
@@ -24,7 +29,7 @@ int main(int argc, char **argv) {
                 break;
             case 1:
                 //TODO
-                printf("\nTODO: print list\n");
+                print_list(llist);
                 break;
             default:
                 printf("Action not availble\n");
