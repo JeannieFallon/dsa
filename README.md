@@ -25,13 +25,27 @@ The Georgia Institute of Technology (GTx)
 | Module      | Assignment  |
 | ----------- | ----------- |
 | 1           | ArrayList   |
+| 2           | TODO   |
+| 3           | TODO   |
+| 4           | TODO   |
+| 5           | TODO   |
+| 6           | TODO   |
+| 7           | TODO   |
+| 8           | TODO   |
+| 9           | TODO   |
+| 10           | TODO   |
+| 11           | TODO   |
+| 12           | TODO   |
+| 13           | TODO   |
+| 14           | TODO   |
 
 ## Usage
 
 ### System Requirements
 
-- Linux (written on Debian 11)
+- Linux (test on Debian 12)
 - `make`
+- `task`
 - `gcc`
 
 To build all binaries, run:
