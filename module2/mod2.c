@@ -5,13 +5,6 @@
 
 #include "mod2.h"
 
-#define INIT_CAP 9
-
-void init(struct singly_linked_list* sllst) {
-    sllst->cap = INIT_CAP;
-    sllst->size = 0;
-    sllst->arr = calloc(INIT_CAP, sizeof(int));
-}
 
 void print_list(struct singly_linked_list* sllst) {
     printf("\n>>> Current list: ");

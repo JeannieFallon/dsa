@@ -3,9 +3,14 @@
 #define MOD2_H
 
 struct singly_linked_list {
-    int cap;    // Capacity of backing array
-    int size;   // Length of current values
-    int* arr;   // Backing array
+    int size;                   // Length of current list
+    struct sll_node* head;      // Pointer to first node in list
+    struct sll_node* tail;      // Pointer to last node in list
+};
+
+struct sll_node {
+    int value;                  // Stored value
+    struct sll_node* next;      // Pointer to next node in list
 };
 
 void init(struct singly_linked_list* sllst);
