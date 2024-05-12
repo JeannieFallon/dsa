@@ -15,8 +15,7 @@ int main() {
     printf("*** Module 1: SinglyLinkedList (integers only) ***\n");
 
     // Initialize singly-linked list
-    struct singly_linked_list sll = { 0, NULL, NULL };
-    struct singly_linked_list* psll = &sll;
+    struct singly_linked_list* sll = malloc(sizeof(struct singly_linked_list));
 
     int ans = -1;
     do {
@@ -32,25 +31,27 @@ int main() {
                 printf("\nGoodbye!\n");
                 break;
             case 1:
-                print_list(psll);
+                print_list(sll);
                 break;
             case 2:
-                add_to_front(psll);
+                add_to_front(sll);
                 break;
             case 3:
-                add_to_back(psll);
+                add_to_back(sll);
                 break;
             case 4:
-                remove_from_front(psll);
+                remove_from_front(sll);
                 break;
             case 5:
-                remove_from_back(psll);
+                remove_from_back(sll);
                 break;
             default:
                 printf("Action not availble\n");
         }
 
     } while (ans != 0);
+
+    free(sll);
 
     return 0;
 }

@@ -13,11 +13,11 @@ struct sll_node {
     struct sll_node* next;      // Pointer to next node in list
 };
 
-void init(struct singly_linked_list* sllst);
-void print_list(struct singly_linked_list* sllst);
-void add_to_front(struct singly_linked_list* sllst);
-void add_to_back(struct singly_linked_list* sllst);
-void remove_from_front(struct singly_linked_list* sllst);
-void remove_from_back(struct singly_linked_list* sllst);
+void init(struct singly_linked_list* sll);
+void print_list(struct singly_linked_list* sll);
+void add_to_front(struct singly_linked_list* sll);
+void add_to_back(struct singly_linked_list* sll);
+void remove_from_front(struct singly_linked_list* sll);
+void remove_from_back(struct singly_linked_list* sll);
 
 #endif /* MOD2_H */
