@@ -16,6 +16,7 @@ int main() {
 
     // Initialize singly-linked list
     struct singly_linked_list* sll = malloc(sizeof(struct singly_linked_list));
+    init(sll);
 
     int ans = -1;
     do {
@@ -31,7 +32,7 @@ int main() {
                 printf("\nGoodbye!\n");
                 break;
             case 1:
-                print_list(sll);
+                print_sll(sll);
                 break;
             case 2:
                 add_to_front(sll);
