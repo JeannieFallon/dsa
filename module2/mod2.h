@@ -14,7 +14,7 @@ struct sll_node {
 };
 
 void init(struct singly_linked_list* sll);
-void print_list(struct singly_linked_list* sll);
+void print_sll(struct singly_linked_list* sll);
 void add_to_front(struct singly_linked_list* sll);
 void add_to_back(struct singly_linked_list* sll);
 void remove_from_front(struct singly_linked_list* sll);
