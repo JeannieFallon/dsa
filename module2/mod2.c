@@ -10,11 +10,18 @@ void init(struct singly_linked_list* sll) {
     sll->size = 0;
     sll->head = NULL;
     sll->tail = NULL;
+}
 
 void print_sll(struct singly_linked_list* sll) {
-    printf("\n>>> Current list: ");
-    while (NULL != sll->next) {
-        printf("\nTODO hit node\n");
+    printf("\n>>> Current list:\n");
+
+    struct sll_node* curr = malloc(sizeof(struct sll_node));
+    curr = sll->head;
+
+
+    while (NULL != curr && NULL != curr->next) {
+        printf("\n%d\n", &curr->next);
+        curr = curr->next;
     }
     printf("\n");
 }
@@ -26,7 +33,7 @@ void add_to_front(struct singly_linked_list* sll) {
     scanf("%d", &val);
 
     // Create new node
-    struct sll_node new_node = malloc(sizeof(sll_node));
+    struct sll_node* new_node = malloc(sizeof(struct sll_node));
 
     // If HEAD exists, set as NEXT on new node
     if (NULL != sll->head) {

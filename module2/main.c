@@ -1,6 +1,7 @@
 /* Module 2: SinglyLinkedList */
 #include <stdio.h>
 #include <stdlib.h>
+
 #include "mod2.h"
 
 char ACTIONS[] =
