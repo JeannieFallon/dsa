@@ -43,9 +43,8 @@ The Georgia Institute of Technology (GTx)
 
 ### System Requirements
 
-- Linux (test on Debian 12)
+- Linux (tested on Debian 12)
 - `make`
-- `task`
 - `gcc`
 
 To build all binaries, run:
@@ -54,7 +53,7 @@ To build all binaries, run:
 make all
 ```
 
-Run each binary to interact with data structure or algorithm covered in each module:
+Run each binary to interact with the data structure or algorithm covered in each module:
 
 ```
 $ ./bin/mod1.elf     
