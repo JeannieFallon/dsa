@@ -5,12 +5,6 @@
 
 #include "mod2.h"
 
-void init(struct singly_linked_list* sll) {
-    // FIXME are these necessary? how to auto initialize to 0 and NULL with malloc?
-    sll->size = 0;
-    sll->head = NULL;
-    sll->tail = NULL;
-}
 
 void print_sll(struct singly_linked_list* sll) {
     printf("\n>>> Current list:\n");
