@@ -16,7 +16,11 @@ int main() {
     printf("*** Module 1: SinglyLinkedList (integers only) ***\n");
 
     // Initialize singly-linked list, on the stack because known size
-    struct singly_linked_list sll = {0};
+    struct singly_linked_list sll = {0, NULL, NULL};
+    //sll.head = NULL;
+    //sll.tail = NULL;
+
+    // Get a pointer to pass around
     struct singly_linked_list *psll = &sll;
 
     int ans = -1;
