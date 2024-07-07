@@ -54,5 +54,7 @@ int main() {
 
     } while (ans != 0);
 
+    // FIXME need to loop through list and free each node because allocated on the heap
+
     return 0;
 }

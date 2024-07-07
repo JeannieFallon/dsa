@@ -17,6 +17,9 @@ void print_sll(struct singly_linked_list* sll) {
         curr = curr->next;
     }
     printf("\n");
+
+    // Free curr here because not used again
+    free(curr);
 }
 
 void add_to_front(struct singly_linked_list* sll) {
