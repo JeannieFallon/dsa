@@ -38,6 +38,7 @@ void add_to_front(struct singly_linked_list* sll) {
 
     // Re-assign HEAD to new node
     sll->head = new_node;
+    sll->size++;
 
     print_sll(sll);
 }
