@@ -21,6 +21,7 @@ int main() {
     struct singly_linked_list *psll = &sll;
 
     int ans = -1;
+
     do {
         printf("\nChoose an action:\n");
         printf("-----\n");

@@ -73,9 +73,43 @@ void add_to_back(struct singly_linked_list* sll) {
 }
 
 void remove_from_front(struct singly_linked_list* sll) {
-    printf("\nTODO\n");
+    int val;
+
+    if (sll->size == 0) {
+        printf("!!! Cannot remove item from list size %d !!!\n", sll->size);
+        goto exit;
+    }
+
+    val = sll->head->value;
+
+    // Create another pointer so that HEAD memory can be freed after re-assignment
+    struct sll_node* curr = malloc(sizeof(struct sll_node));
+    curr = sll->head;
+
+    // Re-assign HEAD to previous HEAD's NEXT and decrement list size
+    sll->head = sll->head->next;
+    sll->size--;
+
+    // Must free nodes because allocated on the heap
+    free(curr);
+    curr = NULL;
+
+    // For list size 1, HEAD and TAIL are same node
+    if (sll->size == 1) {
+        // Must free nodes because allocated on the heap
+        free(sll->tail);
+        sll->tail = NULL;
+    }
+
+    printf("Removed value from FRONT of list: %d\n", val);
+
+exit:
+    print_sll(sll);
 }
 
 void remove_from_back(struct singly_linked_list* sll) {
     printf("\nTODO\n");
+
+exit:
+    print_sll(sll);
 }
