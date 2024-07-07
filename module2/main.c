@@ -1,6 +1,7 @@
 /* Module 2: SinglyLinkedList */
 #include <stdio.h>
 #include <stdlib.h>
+
 #include "mod2.h"
 
 char ACTIONS[] =
@@ -14,10 +15,13 @@ char ACTIONS[] =
 int main() {
     printf("*** Module 1: SinglyLinkedList (integers only) ***\n");
 
-    // Initialize singly-linked list
-    struct singly_linked_list* sll = malloc(sizeof(struct singly_linked_list));
+    // Initialize singly-linked list, on the stack because known size
+    struct singly_linked_list sll = {0};
+    // Get a pointer to pass around
+    struct singly_linked_list *psll = &sll;
 
     int ans = -1;
+
     do {
         printf("\nChoose an action:\n");
         printf("-----\n");
@@ -31,19 +35,19 @@ int main() {
                 printf("\nGoodbye!\n");
                 break;
             case 1:
-                print_list(sll);
+                print_sll(psll);
                 break;
             case 2:
-                add_to_front(sll);
+                add_to_front(psll);
                 break;
             case 3:
-                add_to_back(sll);
+                add_to_back(psll);
                 break;
             case 4:
-                remove_from_front(sll);
+                remove_from_front(psll);
                 break;
             case 5:
-                remove_from_back(sll);
+                remove_from_back(psll);
                 break;
             default:
                 printf("Action not availble\n");
@@ -51,7 +55,7 @@ int main() {
 
     } while (ans != 0);
 
-    free(sll);
+    // FIXME need to loop through list and free each node because allocated on the heap
 
     return 0;
 }

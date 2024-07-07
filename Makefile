@@ -5,7 +5,8 @@ BASEDIR=$(shell pwd)
 BINDIR=$(BASEDIR)/bin
 
 CC=gcc
-CFLAGS=-g
+# Maximum debug information
+CFLAGS=-g3
 
 $(shell mkdir -p ${BINDIR})
 
